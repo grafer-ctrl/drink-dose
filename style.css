@@ -54,10 +54,10 @@ body {
     width: 100%;
 }
 
-/* Mobile-first container adjustments */
+/* Mobile-first container adjustments - Full Responsive */
 @media (max-width: 768px) {
     .container {
-        padding: 0 var(--space-sm);
+        padding: 0;
         max-width: 100%;
     }
     
@@ -66,8 +66,8 @@ body {
     }
     
     .container > * {
-        margin-left: var(--space-sm);
-        margin-right: var(--space-sm);
+        margin-left: 0;
+        margin-right: 0;
     }
     
     .hero-section {
@@ -75,7 +75,7 @@ body {
     }
     
     .calculator-card {
-        margin: 0 var(--space-sm);
+        margin: 0;
     }
 }
 
@@ -593,7 +593,7 @@ body {
 
 @media (max-width: 768px) {
     .header .container {
-        padding: var(--space-xs);
+        padding: 0;
     }
     
     .nav-brand {
@@ -738,7 +738,7 @@ body {
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 var(--space-sm);
+        padding: 0;
     }
     
     .hero-title {
