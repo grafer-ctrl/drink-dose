@@ -185,10 +185,7 @@ body {
 }
 
 .calculator-card {
-    background: var(--neutral-100);
-    border-radius: var(--radius-lg);
-    padding: var(--space-xxl);
-    box-shadow: var(--shadow-md);
+    /* Removed container styling - now more natural */
     max-width: 600px;
     margin: 0 auto;
 }
@@ -296,9 +293,7 @@ body {
 /* Results Section */
 .results-section {
     margin-top: var(--space-xl);
-    padding: var(--space-lg);
-    background: var(--primary-100);
-    border-radius: var(--radius-md);
+    /* Removed container styling - now more natural */
     animation: fadeInUp 0.3s ease-out;
 }
 
@@ -693,8 +688,7 @@ body {
     }
     
     .calculator-card {
-        padding: var(--space-lg);
-        margin: 0 var(--space-sm);
+        /* Removed mobile container styling - now more natural */
     }
     
     .results-grid {
