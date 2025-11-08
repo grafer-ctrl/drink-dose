@@ -51,6 +51,32 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--space-sm);
+    width: 100%;
+}
+
+/* Mobile-first container adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 var(--space-sm);
+        max-width: 100%;
+    }
+    
+    .main-content {
+        padding: var(--space-sm) 0;
+    }
+    
+    .container > * {
+        margin-left: var(--space-sm);
+        margin-right: var(--space-sm);
+    }
+    
+    .hero-section {
+        padding: var(--space-lg) 0;
+    }
+    
+    .calculator-card {
+        margin: 0 var(--space-sm);
+    }
 }
 
 /* Header Styles */
@@ -60,6 +86,8 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+    /* Add safe area for mobile status bar */
+    padding-top: env(safe-area-inset-top);
 }
 
 .header .container {
@@ -330,9 +358,12 @@ body {
 
 .tracking-timeline {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
     gap: var(--space-xs);
     max-width: 100%;
+    /* Ensure consistent grid layout */
+    grid-auto-rows: 1fr;
+    align-items: stretch;
 }
 
 .timeline-hour {
@@ -343,12 +374,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 500;
     color: var(--neutral-400);
     cursor: pointer;
     transition: all 0.25s ease;
     position: relative;
+    /* Ensure text is centered */
+    text-align: center;
+    word-wrap: break-word;
+    min-height: 0;
+}
 }
 
 .timeline-hour:hover {
@@ -514,6 +550,11 @@ body {
     border: none;
     cursor: pointer;
     padding: var(--space-xs);
+    /* Add safe area positioning */
+    margin-right: env(safe-area-inset-right);
+    margin-top: env(safe-area-inset-top);
+    position: relative;
+    z-index: 1001;
     width: 40px;
     height: 40px;
     border-radius: var(--radius-md);
@@ -613,6 +654,8 @@ body {
         display: flex;
     }
     
+
+    
     .mobile-menu-toggle.active {
         color: var(--primary-500);
     }
@@ -684,6 +727,8 @@ body {
     
     .tracking-timeline {
         grid-template-columns: repeat(8, 1fr);
+        gap: 6px;
+        max-width: 100%;
     }
     
     .tips-grid {
@@ -710,6 +755,8 @@ body {
     
     .tracking-timeline {
         grid-template-columns: repeat(6, 1fr);
+        gap: 4px;
+        max-width: 100%;
     }
 }
 
