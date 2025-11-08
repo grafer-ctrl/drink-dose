@@ -18,6 +18,16 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="logo.png">
     
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_TRACKING_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-YOUR_TRACKING_ID');
+    </script>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,6 +44,11 @@
                 <a href="about.html" class="nav-link active">About</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
         </div>
     </header>
 
