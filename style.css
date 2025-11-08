@@ -45,37 +45,75 @@ body {
     color: var(--neutral-700);
     background-color: var(--neutral-50);
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 var(--space-sm);
+    padding: var(--space-sm);
     width: 100%;
 }
 
-/* Mobile-first container adjustments - Full Responsive */
+/* Mobile responsive - Simple and Fast */
 @media (max-width: 768px) {
     .container {
-        padding: 0;
-        max-width: 80%;
+        padding: var(--space-sm);
+        margin: 0;
     }
     
     .main-content {
         padding: var(--space-sm) 0;
     }
     
-    .container > * {
-        margin-left: 0;
-        margin-right: 0;
+    .calculator-card {
+        margin: 0;
+        padding: var(--space-sm);
+        box-shadow: none;
+        border-radius: 0;
     }
     
-    .hero-section {
-        padding: var(--space-lg) 0;
+    .section-title {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .result-value {
+        font-size: 24px;
+    }
+    
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .input-field {
+        font-size: 16px;
+        height: 48px;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+    .container {
+        padding: var(--space-xs);
     }
     
     .calculator-card {
-        margin: 0;
+        padding: var(--space-xs);
+    }
+    
+    .section-title {
+        font-size: 18px;
+    }
+    
+    .hero-title {
+        font-size: 24px;
+    }
+    
+    .input-field {
+        font-size: 16px;
+        height: 44px;
     }
 }
 
@@ -185,9 +223,12 @@ body {
 }
 
 .calculator-card {
-    /* Removed container styling - now more natural */
     max-width: 600px;
     margin: 0 auto;
+    padding: var(--space-md);
+    background: var(--neutral-100);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
 }
 
 .section-title {
@@ -687,8 +728,8 @@ body {
         font-size: 24px;
     }
     
-    .calculator-card {
-        /* Removed mobile container styling - now more natural */
+    .result-value {
+        font-size: 28px;
     }
     
     .results-grid {
