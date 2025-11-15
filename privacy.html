@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Drink-Dose</title>
+    <meta name="description" content="Learn how Drink-Dose protects your privacy. We do not collect or store personal data.">
+    <meta name="theme-color" content="#4a90e2">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4a90e2;
+            --primary-dark: #3a7bc8;
+            --secondary: #50c878;
+            --danger: #e74c3c;
+            --warning: #f39c12;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --gray: #6c757d;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: var(--dark);
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            margin-bottom: 30px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo i {
+            font-size: 2rem;
+            color: var(--primary);
+        }
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+        .back-home {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: var(--primary);
+            color: white;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        .back-home:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        .back-home i {
+            font-size: 1.1rem;
+        }
+        .privacy-content {
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+        .page-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .page-title i {
+            font-size: 1.8rem;
+        }
+        .last-updated {
+            color: var(--gray);
+            font-style: italic;
+            margin-bottom: 25px;
+        }
+        .intro {
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin: 25px 0 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section h2 i {
+            font-size: 1.2rem;
+            color: var(--secondary);
+        }
+        .section ul {
+            padding-left: 25px;
+            margin: 12px 0;
+        }
+        .section ul li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            background: #e3f2fd;
+            border-left: 4px solid var(--primary);
+            padding: 15px;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            margin: 20px 0;
+            font-weight: 500;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px 20px;
+            color: var(--gray);
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        .footer-links a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+        .language-selector {
+            display: flex;
+            gap: 10px;
+        }
+        .lang-btn {
+            padding: 8px 16px;
+            border: 1px solid var(--primary);
+            background: transparent;
+            color: var(--primary);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+        .lang-btn.active {
+            background: var(--primary);
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 1.6rem;
+            }
+            .back-home {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-tint"></i>
+                <h1 id="app-title">Drink-Dose</h1>
+            </div>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <div class="language-selector">
+                    <button class="lang-btn active" id="lang-en">EN</button>
+                    <button class="lang-btn" id="lang-id">ID</button>
+                </div>
+                <a href="index.html" class="back-home">
+                    <i class="fas fa-home"></i> <span id="back-home-text">Home</span>
+                </a>
+            </div>
+        </header>
+
+        <main class="privacy-content">
+            <h1 class="page-title" id="privacy-title">
+                <i class="fas fa-shield-alt"></i> Privacy Policy
+            </h1>
+            <p class="intro" id="privacy-intro">Your privacy is our priority. This policy explains how we handle your data.</p>
+            <p class="last-updated" id="last-updated">Last updated: November 8, 2025</p>
+
+            <div class="section">
+                <h2 id="section-1">1. No Personal Data Collection</h2>
+                <p id="no-collection-text">Drink-Dose does not collect, store, or transmit any personal information. All calculations are performed locally in your browser.</p>
+                <div class="highlight" id="highlight-no-data">
+                    We never ask for your name, email, or any identifying information.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 id="section-2">2. Local Processing Only</h2>
+                <p id="local-processing-text">All water intake calculations and hydration tracking happen entirely on your device. No data is sent to our servers.</p>
+                <ul id="local-list">
+                    <li>Your inputs (weight, age, activity) are processed instantly</li>
+                    <li>Results are displayed immediately in your browser</li>
+                    <li>No cookies, no tracking, no server logs</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2 id="section-3">3. Browser Notifications (Optional)</h2>
+                <p id="notifications-text">You may enable hourly hydration reminders via browser notifications. These are managed by your browser and do not involve our servers.</p>
+            </div>
+
+            <div class="section">
+                <h2 id="section-4">4. Third-Party Services</h2>
+                <p id="third-party-text">We use Google AdSense to display non-personalized ads. These ads are governed by Google's Privacy Policy.</p>
+                <p id="adsense-note">We do not share any user data with advertisers.</p>
+            </div>
+
+            <div class="section">
+                <h2 id="section-5">5. Analytics (Anonymous)</h2>
+                <p id="analytics-text">We may use anonymized analytics to improve performance. No personal data is collected.</p>
+            </div>
+
+            <div class="section">
+                <h2 id="section-6">6. Children's Privacy</h2>
+                <p id="children-text">Our service is not directed to children under 13. We do not knowingly collect data from children.</p>
+            </div>
+
+            <div class="section">
+                <h2 id="section-7">7. Changes to This Policy</h2>
+                <p id="changes-text">We may update this policy. Changes will be posted here with the updated date.</p>
+            </div>
+
+            <div class="section">
+                <h2 id="section-8">8. Contact Us</h2>
+                <p id="contact-text">Questions? Email us at <a href="mailto:contact@hydrolife.com" style="color: var(--primary);">contact@hydrolife.com</a></p>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-links">
+                <a href="privacy.html" id="privacy-link">Privacy Policy</a>
+                <a href="terms.html" id="terms-link">Terms & Conditions</a>
+                <a href="contact.html" id="contact-link">Contact</a>
+                <a href="about.html" id="about-link">About</a>
+            </div>
+            <p id="footer-text">© 2023 Drink-Dose. All rights reserved. For informational purposes only.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Translations
+        const translations = {
+            en: {
+                appTitle: "Drink-Dose",
+                backHomeText: "Home",
+                privacyTitle: "Privacy Policy",
+                privacyIntro: "Your privacy is our priority. This policy explains how we handle your data.",
+                lastUpdated: "Last updated: November 8, 2025",
+                section1: "1. No Personal Data Collection",
+                noCollectionText: "Drink-Dose does not collect, store, or transmit any personal information. All calculations are performed locally in your browser.",
+                highlightNoData: "We never ask for your name, email, or any identifying information.",
+                section2: "2. Local Processing Only",
+                localProcessingText: "All water intake calculations and hydration tracking happen entirely on your device. No data is sent to our servers.",
+                localList: [
+                    "Your inputs (weight, age, activity) are processed instantly",
+                    "Results are displayed immediately in your browser",
+                    "No cookies, no tracking, no server logs"
+                ],
+                section3: "3. Browser Notifications (Optional)",
+                notificationsText: "You may enable hourly hydration reminders via browser notifications. These are managed by your browser and do not involve our servers.",
+                section4: "4. Third-Party Services",
+                thirdPartyText: "We use Google AdSense to display non-personalized ads. These ads are governed by Google's Privacy Policy.",
+                adsenseNote: "We do not share any user data with advertisers.",
+                section5: "5. Analytics (Anonymous)",
+                analyticsText: "We may use anonymized analytics to improve performance. No personal data is collected.",
+                section6: "6. Children's Privacy",
+                childrenText: "Our service is not directed to children under 13. We do not knowingly collect data from children.",
+                section7: "7. Changes to This Policy",
+                changesText: "We may update this policy. Changes will be posted here with the updated date.",
+                section8: "8. Contact Us",
+                contactText: "Questions? Email us at <a href=\"mailto:contact@hydrolife.com\" style=\"color: var(--primary);\">contact@hydrolife.com</a>",
+                privacyLink: "Privacy Policy",
+                termsLink: "Terms & Conditions",
+                contactLink: "Contact",
+                aboutLink: "About",
+                footerText: "© 2023 Drink-Dose. All rights reserved. For informational purposes only."
+            },
+            id: {
+                appTitle: "Drink-Dose",
+                backHomeText: "Beranda",
+                privacyTitle: "Kebijakan Privasi",
+                privacyIntro: "Privasi Anda adalah prioritas kami. Kebijakan ini menjelaskan cara kami menangani data Anda.",
+                lastUpdated: "Terakhir diperbarui: 8 November 2025",
+                section1: "1. Tidak Ada Pengumpulan Data Pribadi",
+                noCollectionText: "Drink-Dose tidak mengumpulkan, menyimpan, atau mengirimkan informasi pribadi apa pun. Semua perhitungan dilakukan secara lokal di browser Anda.",
+                highlightNoData: "Kami tidak pernah meminta nama, email, atau informasi identitas Anda.",
+                section2: "2. Pemrosesan Lokal Saja",
+                localProcessingText: "Semua perhitungan asupan air dan pelacakan hidrasi terjadi sepenuhnya di perangkat Anda. Tidak ada data yang dikirim ke server kami.",
+                localList: [
+                    "Input Anda (berat, usia, aktivitas) diproses secara instan",
+                    "Hasil ditampilkan langsung di browser Anda",
+                    "Tidak ada cookie, tidak ada pelacakan, tidak ada log server"
+                ],
+                section3: "3. Notifikasi Browser (Opsional)",
+                notificationsText: "Anda dapat mengaktifkan pengingat hidrasi per jam melalui notifikasi browser. Ini dikelola oleh browser Anda dan tidak melibatkan server kami.",
+                section4: "4. Layanan Pihak Ketiga",
+                thirdPartyText: "Kami menggunakan Google AdSense untuk menampilkan iklan non-personalisasi. Iklan ini diatur oleh Kebijakan Privasi Google.",
+                adsenseNote: "Kami tidak membagikan data pengguna apa pun kepada pengiklan.",
+                section5: "5. Analitik (Anonim)",
+                analyticsText: "Kami mungkin menggunakan analitik anonim untuk meningkatkan performa. Tidak ada data pribadi yang dikumpulkan.",
+                section6: "6. Privasi Anak",
+                childrenText: "Layanan kami tidak ditujukan untuk anak di bawah 13 tahun. Kami tidak dengan sengaja mengumpulkan data dari anak-anak.",
+                section7: "7. Perubahan pada Kebijakan Ini",
+                changesText: "Kami dapat memperbarui kebijakan ini. Perubahan akan diposting di sini dengan tanggal yang diperbarui.",
+                section8: "8. Hubungi Kami",
+                contactText: "Ada pertanyaan? Email kami di <a href=\"mailto:contact@hydrolife.com\" style=\"color: var(--primary);\">contact@hydrolife.com</a>",
+                privacyLink: "Kebijakan Privasi",
+                termsLink: "Syarat & Ketentuan",
+                contactLink: "Kontak",
+                aboutLink: "Tentang",
+                footerText: "© 2023 Drink-Dose. Hak cipta dilindungi. Hanya untuk tujuan informasi."
+            }
+        };
+
+        // DOM Elements
+        const elements = {
+            appTitle: document.getElementById('app-title'),
+            backHomeText: document.getElementById('back-home-text'),
+            privacyTitle: document.getElementById('privacy-title'),
+            privacyIntro: document.getElementById('privacy-intro'),
+            lastUpdated: document.getElementById('last-updated'),
+            section1: document.getElementById('section-1'),
+            noCollectionText: document.getElementById('no-collection-text'),
+            highlightNoData: document.getElementById('highlight-no-data'),
+            section2: document.getElementById('section-2'),
+            localProcessingText: document.getElementById('local-processing-text'),
+            localList: document.getElementById('local-list'),
+            section3: document.getElementById('section-3'),
+            notificationsText: document.getElementById('notifications-text'),
+            section4: document.getElementById('section-4'),
+            thirdPartyText: document.getElementById('third-party-text'),
+            adsenseNote: document.getElementById('adsense-note'),
+            section5: document.getElementById('section-5'),
+            analyticsText: document.getElementById('analytics-text'),
+            section6: document.getElementById('section-6'),
+            childrenText: document.getElementById('children-text'),
+            section7: document.getElementById('section-7'),
+            changesText: document.getElementById('changes-text'),
+            section8: document.getElementById('section-8'),
+            contactText: document.getElementById('contact-text'),
+            privacyLink: document.getElementById('privacy-link'),
+            termsLink: document.getElementById('terms-link'),
+            contactLink: document.getElementById('contact-link'),
+            aboutLink: document.getElementById('about-link'),
+            footerText: document.getElementById('footer-text'),
+            langEn: document.getElementById('lang-en'),
+            langId: document.getElementById('lang-id')
+        };
+
+        let currentLang = 'en';
+
+        function updateLanguage(lang) {
+            currentLang = lang;
+            const t = translations[lang];
+
+            Object.keys(elements).forEach(key => {
+                const el = elements[key];
+                if (el && t[key]) {
+                    if (Array.isArray(t[key])) {
+                        el.innerHTML = '';
+                        t[key].forEach(item => {
+                            const li = document.createElement('li');
+                            li.textContent = item;
+                            el.appendChild(li);
+                        });
+                    } else if (key === 'contactText' || key === 'highlightNoData') {
+                        el.innerHTML = t[key];
+                    } else {
+                        el.textContent = t[key];
+                    }
+                }
+            });
+
+            elements.langEn.classList.toggle('active', lang === 'en');
+            elements.langId.classList.toggle('active', lang === 'id');
+        }
+
+        elements.langEn.addEventListener('click', () => updateLanguage('en'));
+        elements.langId.addEventListener('click', () => updateLanguage('id'));
+
+        updateLanguage('en');
+    </script>
+</body>
+</html>
